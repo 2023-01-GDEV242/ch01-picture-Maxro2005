@@ -11,10 +11,15 @@
  */
 public class Picture
 {
-    private Square wall;
-    private Square window;
-    private Triangle roof;
-    private Circle sun;
+    private Circle body1;
+    private Circle body2;
+    private Circle body3;
+    private Square eye1;
+    private Square eye2;
+    private Triangle nose;
+    private Triangle mouth;
+    private Person arm1;
+    private Person arm2;
     private boolean drawn;
 
     /**
@@ -22,10 +27,15 @@ public class Picture
      */
     public Picture()
     {
-        wall = new Square();
-        window = new Square();
-        roof = new Triangle();  
-        sun = new Circle();
+        body1 = new Circle();
+        body2 = new Circle();
+        body3 = new Circle();
+        eye1 = new Square();
+        eye2 = new Square();
+        nose = new Triangle();
+        mouth = new Triangle();
+        arm1 = new Person();
+        arm2 = new Person();
         drawn = false;
     }
 
@@ -35,27 +45,20 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
-            wall.moveVertical(20);
-            wall.changeSize(120);
-            wall.makeVisible();
+            body1.moveVertical(75);
+            body1.changeSize(100);
+            body1.changeColor("yellow");
+            body1.makeVisible();
             
-            window.changeColor("black");
-            window.moveHorizontal(-120);
-            window.moveVertical(40);
-            window.changeSize(40);
-            window.makeVisible();
-    
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
-            roof.makeVisible();
-    
-            sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
-            sun.makeVisible();
+            body2.changeSize(80);
+            body2.changeColor("yellow");
+            body2.makeVisible();
+            
+            body3.moveVertical(-55);
+            body3.changeSize(60);
+            body3.changeColor("yellow");
+            body3.makeVisible();
+            
             drawn = true;
         }
     }
@@ -65,10 +68,7 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        wall.changeColor("black");
-        window.changeColor("white");
-        roof.changeColor("black");
-        sun.changeColor("black");
+        
     }
 
     /**
@@ -76,9 +76,6 @@ public class Picture
      */
     public void setColor()
     {
-        wall.changeColor("red");
-        window.changeColor("black");
-        roof.changeColor("green");
-        sun.changeColor("yellow");
+        
     }
 }
