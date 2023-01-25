@@ -6,8 +6,10 @@
  *
  * This class was written as an early example for teaching Java with BlueJ.
  * 
- * @author  Michael Kšlling and David J. Barnes
- * @version 2016.02.29
+ * My picture is a yellow snowman (since white would not show up with the white background)
+ * 
+ * @author  Max Romano
+ * @version 1/25/2023
  */
 public class Picture
 {
