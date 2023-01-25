@@ -61,38 +61,38 @@ public class Picture
             body3.changeColor("yellow");
             body3.makeVisible();
             
-            eye1.moveVertical(-30);
-            eye1.moveHorizontal(20);
+            eye1.moveVertical(-65);
+            eye1.moveHorizontal(-52);
             eye1.changeSize(5);
             eye1.changeColor("black");
             eye1.makeVisible();
             
-            eye2.moveVertical(-30);
-            eye2.moveHorizontal(40);
+            eye2.moveVertical(-65);
+            eye2.moveHorizontal(-32);
             eye2.changeSize(5);
             eye2.changeColor("black");
             eye2.makeVisible();
             
-            nose.moveVertical(-20);
-            nose.moveHorizontal(30);
-            nose.changeSize(10, 5);
+            nose.moveVertical(-75);
+            nose.moveHorizontal(60);
+            nose.changeSize(7, 7);
             nose.changeColor("black");
             nose.makeVisible();
             
-            mouth.moveVertical(-10);
-            mouth.moveHorizontal(30);
-            mouth.changeSize(-10, 15);
+            mouth.moveVertical(-50);
+            mouth.moveHorizontal(60);
+            mouth.changeSize(-10, 30);
             mouth.changeColor("black");
             mouth.makeVisible();
             
-            arm1.moveVertical(-40);
-            arm1.moveHorizontal(-80);
+            arm1.moveVertical(-60);
+            arm1.moveHorizontal(-65);
             arm1.changeSize(3, 80);
             arm1.changeColor("black");
             arm1.makeVisible();
             
-            arm2.moveVertical(-40);
-            arm2.moveHorizontal(80);
+            arm2.moveVertical(-60);
+            arm2.moveHorizontal(45);
             arm2.changeSize(3, 80);
             arm2.changeColor("black");
             arm2.makeVisible();
